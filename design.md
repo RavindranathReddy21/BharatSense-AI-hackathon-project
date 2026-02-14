@@ -56,22 +56,22 @@ BharatSense AI follows a serverless, event-driven architecture on AWS to ensure 
                               ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                      Data Layer                                 │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐ │
-│  │  Amazon S3   │  │  DynamoDB    │  │  Amazon Athena       │ │
-│  │              │  │              │  │                      │ │
-│  │  - Sales     │  │  - Store     │  │  - Analytics Queries │ │
-│  │    History   │  │    Metadata  │  │  - Historical        │ │
-│  │  - Forecasts │  │  - User Data │  │    Analysis          │ │
-│  └──────────────┘  └──────────────┘  └──────────────────────┘ │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐   │
+│  │  Amazon S3   │  │  DynamoDB    │  │  Amazon Athena       │   │
+│  │              │  │              │  │                      │   │
+│  │  - Sales     │  │  - Store     │  │  - Analytics Queries │   │
+│  │    History   │  │    Metadata  │  │  - Historical        │   │
+│  │  - Forecasts │  │  - User Data │  │    Analysis          │   │
+│  └──────────────┘  └──────────────┘  └──────────────────────┘   │
 └─────────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                   External Data Sources                         │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐ │
-│  │  Government  │  │   Festival   │  │  Weather APIs        │ │
-│  │  Price APIs  │  │   Calendar   │  │  (Optional)          │ │
-│  └──────────────┘  └──────────────┘  └──────────────────────┘ │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐   │
+│  │  Government  │  │   Festival   │  │  Weather APIs        │   │
+│  │  Price APIs  │  │   Calendar   │  │  (Optional)          │   │
+│  └──────────────┘  └──────────────┘  └──────────────────────┘   │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
