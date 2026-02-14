@@ -2,12 +2,11 @@
 
 ## 1. Problem Statement
 
-India has over 12 million kirana stores that operate without structured data intelligence systems. Retailers rely on intuition for:
+India has over 12 million small and medium enterprises (SMEs) in retail that operate without structured data intelligence systems. Retailers rely on intuition for:
 
 - Inventory planning  
 - Pricing decisions  
-- Seasonal demand estimation  
-- Festival-based stocking  
+- Seasonal and festival demand estimation  
 
 This results in:
 - Overstocking and wastage  
@@ -16,6 +15,15 @@ This results in:
 - Working capital inefficiencies  
 
 Small retailers lack access to affordable, AI-powered analytics tailored to their needs.
+
+### How We're Solving the Access Problem
+
+We make AI accessible through:
+- Low-cost serverless architecture that keeps operational costs minimal
+- Simple natural language interface - no technical training required
+- Mobile-first design that works on basic smartphones
+- Future WhatsApp integration for zero-app-install access
+- Pay-as-you-use model suitable for small business budgets
 
 ## 2. Objective
 
@@ -30,8 +38,7 @@ Build an AI-powered decision copilot that:
 ## 3. Target Users
 
 ### Primary Users
-- Kirana store owners  
-- Small and medium retailers  
+- Small and medium enterprise (SME) retail owners  
 
 ### Secondary Users (Future Expansion)
 - FMCG distributors  
@@ -52,7 +59,7 @@ Build an AI-powered decision copilot that:
   - Seasonality
   - Festival signals
   - Weather signals
-- Provide SKU-level forecasts
+- Provide product-level forecasts (SKU = Stock Keeping Unit, individual product identifier)
 - Display confidence levels with forecasts
 
 ### 4.3 Price Intelligence
@@ -75,7 +82,7 @@ Build an AI-powered decision copilot that:
 
 ### 5.1 Scalability
 - Support onboarding of multiple stores
-- Handle large SKU datasets
+- Handle large product catalogs
 
 ### 5.2 Performance
 - Copilot response time under 3 seconds
@@ -115,11 +122,11 @@ AI is necessary because:
 - API Gateway – API exposure
 - AWS Amplify – Frontend hosting
 
-## 8. MVP Scope
+## 8. Minimum Viable Product (MVP) Scope
 
-The hackathon MVP will demonstrate:
+The hackathon demonstration will include:
 
-- Simulated kirana dataset
+- Simulated retail SME dataset
 - Demand forecast visualization
 - Conversational AI interaction
 - Explainable output reasoning
