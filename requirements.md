@@ -34,7 +34,7 @@ BharatSense AI is an AI-powered decision copilot designed to help small and medi
 **REQ-F-005**: Contextual Factors
 - System shall incorporate seasonality patterns
 - System shall factor in festival calendar events
-- System shall consider weather signals where applicable
+- System may consider weather signals where applicable (optional for MVP)
 - System shall detect local market trends
 
 **REQ-F-006**: Forecast Confidence
@@ -72,7 +72,7 @@ BharatSense AI is an AI-powered decision copilot designed to help small and medi
 - System shall accept synthetic POS (Point of Sale) data
 - System shall integrate public commodity price datasets
 - System shall use festival calendar data
-- System shall incorporate weather data signals
+- Weather data integration is optional for MVP
 
 **REQ-F-012**: Data Storage
 - System shall store historical sales data securely
@@ -127,6 +127,9 @@ BharatSense AI is an AI-powered decision copilot designed to help small and medi
 - System shall encrypt data in transit (HTTPS/TLS)
 - System shall encrypt sensitive data at rest
 - System shall comply with data privacy regulations
+- Store owner data shall NOT be exposed directly to LLMs
+- Only aggregated, anonymized data shall be used for AI training
+- Personal and business-sensitive information shall be masked before LLM processing
 
 ### 3.5 Cost Efficiency
 
@@ -165,6 +168,8 @@ BharatSense AI is an AI-powered decision copilot designed to help small and medi
 - System shall use Amazon Bedrock for natural language understanding
 - System shall use LLM for generating explanations and reasoning
 - System shall implement prompt engineering for retail context
+- Sensitive store data shall be anonymized/masked before LLM processing
+- LLMs shall only receive aggregated metrics, not raw business data
 
 **REQ-AI-003**: Model Performance
 - Forecast accuracy shall be measured and tracked
@@ -188,12 +193,18 @@ BharatSense AI is an AI-powered decision copilot designed to help small and medi
 ### 5.1 External Data Sources
 
 **REQ-INT-001**: Government Data APIs
-- System shall integrate commodity price data from government sources
+- System shall integrate commodity price data from government sources:
+  - Ministry of Consumer Affairs (https://fcainfoweb.nic.in)
+  - AGMARKNET (https://agmarknet.gov.in) for agricultural commodities
+  - State government price monitoring portals
 - System shall handle API rate limits and failures gracefully
+- System shall cite data sources in price-related recommendations
 
-**REQ-INT-002**: Weather Data
-- System shall integrate weather forecast APIs
-- System shall correlate weather patterns with demand
+**REQ-INT-002**: Weather Data (Optional Enhancement)
+- Weather data integration is optional for MVP
+- If implemented, system shall integrate weather forecast APIs
+- Weather correlation with demand is useful for specific categories (beverages, seasonal items)
+- Can be deferred to post-MVP phase
 
 **REQ-INT-003**: Festival Calendar
 - System shall maintain Indian festival calendar
@@ -237,6 +248,9 @@ BharatSense AI is an AI-powered decision copilot designed to help small and medi
 - Unit tests for critical business logic
 - Integration tests for API endpoints
 - End-to-end tests for key user flows
+- Regression tests to ensure new changes don't break existing functionality
+- Stress tests to validate system performance under high load
+- Load tests to verify concurrent user handling capabilities
 
 ## 7. MVP Scope Definition
 
