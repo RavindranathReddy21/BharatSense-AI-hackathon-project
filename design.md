@@ -9,48 +9,48 @@ BharatSense AI follows a serverless, event-driven architecture on AWS to ensure 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                         Frontend Layer                          │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │  React Web App (AWS Amplify)                             │  │
-│  │  - Conversational UI                                     │  │
-│  │  - Forecast Visualization                                │  │
-│  │  - Dashboard                                             │  │
-│  └──────────────────────────────────────────────────────────┘  │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │  React Web App (AWS Amplify)                             │   │
+│  │  - Conversational UI                                     │   │
+│  │  - Forecast Visualization                                │   │
+│  │  - Dashboard                                             │   │
+│  └──────────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────────┘
                               │
                               │ HTTPS/REST
                               ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                         API Gateway Layer                       │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │  Amazon API Gateway                                      │  │
-│  │  - Authentication & Authorization                        │  │
-│  │  - Rate Limiting                                         │  │
-│  │  - Request Validation                                    │  │
-│  └──────────────────────────────────────────────────────────┘  │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │  Amazon API Gateway                                      │   │
+│  │  - Authentication & Authorization                        │   │
+│  │  - Rate Limiting                                         │   │
+│  │  - Request Validation                                    │   │
+│  └──────────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                      Application Layer (Lambda)                 │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐ │
-│  │   Copilot    │  │  Forecasting │  │  Price Intelligence  │ │
-│  │   Service    │  │   Service    │  │      Service         │ │
-│  │              │  │              │  │                      │ │
-│  │  - NL Query  │  │  - ML Models │  │  - Price Analysis    │ │
-│  │  - LLM Call  │  │  - Demand    │  │  - Anomaly Detection │ │
-│  │  - Response  │  │    Forecast  │  │  - Margin Optimizer  │ │
-│  └──────────────┘  └──────────────┘  └──────────────────────┘ │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐   │
+│  │   Copilot    │  │  Forecasting │  │  Price Intelligence  │   │
+│  │   Service    │  │   Service    │  │      Service         │   │
+│  │              │  │              │  │                      │   │
+│  │  - NL Query  │  │  - ML Models │  │  - Price Analysis    │   │
+│  │  - LLM Call  │  │  - Demand    │  │  - Anomaly Detection │   │
+│  │  - Response  │  │    Forecast  │  │  - Margin Optimizer  │   │
+│  └──────────────┘  └──────────────┘  └──────────────────────┘   │
 └─────────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                         AI/ML Layer                             │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │  Amazon Bedrock                                          │  │
-│  │  - Claude/Llama for NLU                                  │  │
-│  │  - Prompt Engineering                                    │  │
-│  │  - Explainable Reasoning                                 │  │
-│  └──────────────────────────────────────────────────────────┘  │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │  Amazon Bedrock                                          │   │
+│  │  - Claude/Llama for NLU                                  │   │
+│  │  - Prompt Engineering                                    │   │
+│  │  - Explainable Reasoning                                 │   │
+│  └──────────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────────┘
                               │
                               ▼
