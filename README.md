@@ -1,7 +1,5 @@
 # BharatSense AI – AI Decision Copilot for Bharat Retail
 
----
-
 ## 1. Problem Statement
 
 India has over 12 million small and medium enterprises (SMEs) in retail that operate without structured data intelligence systems. Retailers rely on intuition for:
@@ -25,8 +23,6 @@ Traditional rule-based systems fail because:
 
 This proves there is a need for an AI-powered copilot that enables data-driven decision-making for SMEs.
 
----
-
 ## 2. Proposed Solution - BharatSense AI
 
 Build an AI-powered decision copilot that:
@@ -46,8 +42,6 @@ We make AI accessible through:
 - Future WhatsApp integration for zero-app-install access
 - Pay-as-you-use model suitable for small business budgets
 
----
-
 ## 3. Target Users
 
 ### Primary Users
@@ -57,8 +51,6 @@ We make AI accessible through:
 - FMCG distributors  
 - D2C brands  
 - Marketplace sellers
-
----
 
 ## 4. Functional Requirements
 
@@ -93,8 +85,6 @@ We make AI accessible through:
 - Festival calendar data
 - Weather data signals
 
----
-
 ## 5. Non-Functional Requirements
 
 ### 5.1 Scalability
@@ -114,8 +104,6 @@ We make AI accessible through:
 ### 5.5 Cost Efficiency
 - Optimized AWS usage suitable for small retailers
 
----
-
 ## 6. AI Requirements
 
 The system must:
@@ -132,8 +120,6 @@ AI is necessary because:
 - Natural language interaction improves accessibility
 - Insights must be interpretable and context-aware
 
----
-
 ## 7. Technology Stack (AWS)
 
 - Amazon Bedrock – Generative AI reasoning
@@ -144,8 +130,6 @@ AI is necessary because:
 - AWS Amplify – Frontend hosting
 - Amazon Cloudwatch - Monitoring
 
----
-
 ## 8. Minimum Viable Product (MVP) Scope
 
 The hackathon demonstration will include:
@@ -155,8 +139,6 @@ The hackathon demonstration will include:
 - Conversational AI interaction
 - Explainable output reasoning
 - Hyperlocal seasonal impact simulation
-
----
 
 ## 9. Future Roadmap
 
