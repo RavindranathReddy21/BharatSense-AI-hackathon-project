@@ -1,5 +1,7 @@
 # BharatSense AI – AI Decision Copilot for Bharat Retail
 
+---
+
 ## 1. Problem Statement
 
 India has over 12 million small and medium enterprises (SMEs) in retail that operate without structured data intelligence systems. Retailers rely on intuition for:
@@ -12,11 +14,30 @@ This results in:
 - Overstocking and wastage  
 - Missed demand opportunities  
 - Reduced profit margins  
-- Working capital inefficiencies  
+- Working capital inefficiencies
+- Lack of access to affordable analytics tools
 
-Small retailers lack access to affordable, AI-powered analytics tailored to their needs.
+Traditional rule-based systems fail because:
+- Retail demand is nonlinear and seasonal
+- Static rules cannot adapt to new patterns
+- Rules cannot reason over multiple variables (price, weather, festivals, trend shifts)
+- Manual dashboards require technical literacy
 
-### How We're Solving the Access Problem
+This proves there is a need for an AI-powered copilot that enables data-driven decision-making for SMEs.
+
+---
+
+## 2. Proposed Solution - BharatSense AI
+
+Build an AI-powered decision copilot that:
+
+- Enhances retail decision-making  
+- Improves operational efficiency  
+- Provides explainable demand and pricing insights  
+- Works through natural language interaction  
+- Is scalable across India's retail ecosystem
+
+### How We're Solving the AI Accessibility Problem
 
 We make AI accessible through:
 - Low-cost serverless architecture that keeps operational costs minimal
@@ -25,15 +46,7 @@ We make AI accessible through:
 - Future WhatsApp integration for zero-app-install access
 - Pay-as-you-use model suitable for small business budgets
 
-## 2. Objective
-
-Build an AI-powered decision copilot that:
-
-- Enhances retail decision-making  
-- Improves operational efficiency  
-- Provides explainable demand and pricing insights  
-- Works through natural language interaction  
-- Is scalable across India's retail ecosystem  
+---
 
 ## 3. Target Users
 
@@ -43,7 +56,9 @@ Build an AI-powered decision copilot that:
 ### Secondary Users (Future Expansion)
 - FMCG distributors  
 - D2C brands  
-- Marketplace sellers  
+- Marketplace sellers
+
+---
 
 ## 4. Functional Requirements
 
@@ -78,6 +93,8 @@ Build an AI-powered decision copilot that:
 - Festival calendar data
 - Weather data signals
 
+---
+
 ## 5. Non-Functional Requirements
 
 ### 5.1 Scalability
@@ -97,6 +114,8 @@ Build an AI-powered decision copilot that:
 ### 5.5 Cost Efficiency
 - Optimized AWS usage suitable for small retailers
 
+---
+
 ## 6. AI Requirements
 
 The system must:
@@ -113,6 +132,8 @@ AI is necessary because:
 - Natural language interaction improves accessibility
 - Insights must be interpretable and context-aware
 
+---
+
 ## 7. Technology Stack (AWS)
 
 - Amazon Bedrock – Generative AI reasoning
@@ -121,6 +142,9 @@ AI is necessary because:
 - Amazon Athena – Analytics layer
 - API Gateway – API exposure
 - AWS Amplify – Frontend hosting
+- Amazon Cloudwatch - Monitoring
+
+---
 
 ## 8. Minimum Viable Product (MVP) Scope
 
@@ -131,6 +155,8 @@ The hackathon demonstration will include:
 - Conversational AI interaction
 - Explainable output reasoning
 - Hyperlocal seasonal impact simulation
+
+---
 
 ## 9. Future Roadmap
 
